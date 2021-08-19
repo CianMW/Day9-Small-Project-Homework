@@ -31,10 +31,6 @@ h1 {
     font-size: medium;
     font-weight: bold;
 }
-border-style: solid;
-border-width: 3px;
-border-color: #4a4a4a;
-padding: 12px;
-border-radius: 8px;
-display: inline-block;
-width: 60%;
+.marked {
+    background-color: red;
+}

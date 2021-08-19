@@ -12,7 +12,18 @@ const makeBoard = () => {
     }
 }
 
+const chooseANumber = ()  => {
+    let randomNumber = Math.round(Math.random()*76 +1)
+    if (document.getElementById(randomNumber).classList.contains("marked") ) {
+        chooseANumber()
+    } else {
+        markANumber(randomNumber)
+    }
+}
 
+const markANumber = (num) => {
+    document.getElementById(num).classList.add("marked")
+}
 
 
 
